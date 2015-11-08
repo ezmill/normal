@@ -44,7 +44,7 @@ function init(){
     // _texture = new THREE.Texture( video );
     _texture = null;
     // _texture.needsUpdate = true;
-    // _texture = THREE.ImageUtils.loadTexture("assets/textures/me.jpg");
+    // _texture = THREE.ImageUtils.loadTexture("assets/textures/IMG_2584.jpg");
     // _texture = new THREE.Texture(gradient.canvas);
 	// texture = THREE.ImageUtils.loadTexture("assets/textures/IMG_4215.JPG");
 	// _texture.minFilter = _texture.magFilter = THREE.NearestFilter;
@@ -94,7 +94,7 @@ function init(){
         // customShaders.gridShader,
         // paintFlow,
         // customShaders2.gridShader,
-       	customShaders2.flowShader,
+       	customShaders2.reposShader,
         customShaders2.blurShader,
         customShaders.diffShader, 
         customShaders2.reposShader,

@@ -224,7 +224,7 @@ var CustomShaders = function(){
 			// "		vec4 color = texture2D(texture, vUv);",
 			// "vec4 color = vec4(uv,0.5+0.5*sin(time),1.0);",
 			// "vec4 color = mix(vec4(0.5+0.5*cos(time), 1.0 - uv.yx,1.0), vec4(uv,0.5+0.5*sin(time),1.0), (0.5 + 0.5*sin((-1.0 + uv.x*2.0)*(-1.0 + uv.y*2.0)*30.0)));",
-			"vec4 color = mix(vec4(0.5+0.5*cos(time), 1.0 - uv.yx,1.0), vec4(uv.yx,0.5+0.5*sin(time),1.0), (0.5 + 0.5*sin((uv.x)*(uv.y)*30.0)));",
+			"vec4 color = mix(vec4(0.5+0.5*cos(time), 1.0 - uv.yx,1.0), vec4(uv.yx,0.5+0.5*sin(time),1.0), (0.5 + 0.5*sin((-1.0 + uv.x*2.0)*(-1.0 + uv.y*2.0)*20.0)));",
 			// "vec4 color = mix(vec4(1.0, 1.0 - uv.yx,1.0), vec4(uv.yx,0.0,1.0), (0.5 + 0.5*sin((uv.x)*(uv.y)*30.0)));",
 			// "vec4 color = mix(vec4(0.5+0.5*cos(time), 1.0 - uv.yx,1.0), texture2D(texture, vUv)*2.0, (0.5 + 0.5*sin((-1.0 + 2.0*uv.x)*(-1.0 + 2.0*uv.y)*3.0)));",
 
@@ -1137,7 +1137,7 @@ var CustomShaders = function(){
 			"// Using a sobel filter to create a normal map and then applying simple lighting.",
 
 			"// This makes the darker areas less bumpy but I like it",
-			"//#define USE_LINEAR_FOR_BUMPMAP",
+			"#define USE_LINEAR_FOR_BUMPMAP",
 
 			"#define SHOW_NORMAL_MAP",
 			"//#define SHOW_ALBEDO",
