@@ -266,8 +266,8 @@ function draw(){
 	for(var i = 0; i < fbMaterial.fbos.length; i++){
 	  fbMaterial.fbos[i].material.uniforms.time.value = time;
 	  if(fbMaterial.fbos[i].material.uniforms["r2"])fbMaterial.fbos[i].material.uniforms["r2"].value = r2;
-      // fbMaterial.fbos[i].material.uniforms.mouse.value = new THREE.Vector2(Math.sin(time), Math.cos(time));
-      fbMaterial.fbos[i].material.uniforms.mouse.value = new THREE.Vector2(mouse.x,mouse.y);
+      fbMaterial.fbos[i].material.uniforms.mouse.value = new THREE.Vector2(Math.sin(time)*0.5, Math.cos(time)*0.5);
+      // fbMaterial.fbos[i].material.uniforms.mouse.value = new THREE.Vector2(mouse.x,mouse.y);
       // fbMaterial.fbos[i].material.uniforms.mouse.value = new THREE.Vector2(0.0,0.0);
       fbMaterial.material.uniforms.mouse.value = new THREE.Vector2(renderSize.x/2, renderSize.y/2);
 
